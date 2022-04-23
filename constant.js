@@ -10,7 +10,8 @@ const keyMap = {
   HI_KEY: '\e',
   BYE_KEY: '\h',
   WOW_KEY: '\g',
-  BOO_KEY: '\c'
+  BOO_KEY: '\c',
+  EXIT_KEY: '\u0003'
 };
 
 module.exports = {

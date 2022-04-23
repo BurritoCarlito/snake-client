@@ -13,7 +13,7 @@ const setInput = (conn) => {
 };
 
 const handleUserInput = function (key) {
-  if (key === '\u0003') {
+  if (key === keyMap.EXIT_KEY) {
   console.log("Game Closed");
     process.exit();
   }
