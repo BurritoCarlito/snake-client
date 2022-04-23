@@ -1,7 +1,6 @@
 const { keyMap } = require("./constant");
-let connection; //stores the active TCP connection object.
+let connection; 
 
-//stdin object returned will allow us to listen for keyboard input and react to it
 const setInput = (conn) => {
   connection = conn;
   const stdin = process.stdin;
