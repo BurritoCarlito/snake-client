@@ -9,7 +9,7 @@ Before you can run this client, you will need to be running the server side whic
 ## Final Product
 
 
-![Snake displaying message while playing"]()
+![Snake displaying message while playing"](https://user-images.githubusercontent.com/95609843/164873363-c7fd22ab-13c0-4d99-9272-63cd3dcd7a24.png)
 
 
 ## Getting Started
