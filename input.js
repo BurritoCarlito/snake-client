@@ -12,9 +12,9 @@ const setInput = (conn) => {
   return stdin;
 };
 
-const handleUserInput = function (key) {
+const handleUserInput = function(key) {
   if (key === keyMap.EXIT_KEY) {
-  console.log("Game Closed");
+    console.log("Game Closed");
     process.exit();
   }
 

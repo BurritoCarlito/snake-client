@@ -2,16 +2,16 @@ const net = require("net");
 const { IP, PORT } = require("./constant");
 
 //establishes a connection with the grame server
-const connect = function () {
+const connect = function() {
   const conn = net.createConnection({
     host: IP,
     port: PORT,
   });
 
-  conn.on('connect', (client) => {
+  conn.on('connect', () => {
     console.log("Successfully connected to the game server"),
-    conn.write("Name: IT1"),
-    conn.write("Move: up")
+    conn.write("Name: IT1");
+    // conn.write("Move: up")
   });
 
   conn.on('data', (data) => {
@@ -20,7 +20,7 @@ const connect = function () {
 
   conn.setEncoding("utf8");
   
-  return conn; 
+  return conn;
 };
 
 
