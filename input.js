@@ -1,3 +1,4 @@
+const { keyMap } = require("./constant");
 let connection; //stores the active TCP connection object.
 
 //stdin object returned will allow us to listen for keyboard input and react to it
@@ -17,39 +18,39 @@ const handleUserInput = function (key) {
     process.exit();
   }
 
-  if (key === '\w') {
+  if (key === keyMap.MOVE_UP_KEY) {
     connection.write("Move: up");
   }
 
-  if (key === '\a') {
+  if (key === keyMap.MOVE_LEFT_KEY) {
     connection.write("Move: left");
   }
 
-  if (key === '\s') {
+  if (key === keyMap.MOVE_DOWN_KEY) {
     connection.write("Move: down");
   }
 
-  if (key === '\d') {
+  if (key === keyMap.MOVE_RIGHT_KEY) {
     connection.write("Move: right");
   }
 
-  if (key === '\q') {
+  if (key === keyMap.HAPPY_KEY) {
     connection.write("Say: :D");
   }
 
-  if (key === '\e') {
+  if (key === keyMap.HI_KEY) {
     connection.write("Say: Hi!");
   }
 
-  if (key === '\h') {
+  if (key === keyMap.BYE_KEY) {
     connection.write("Say: Bye");
   }
 
-  if (key === '\g') {
+  if (key === keyMap.WOW_KEY) {
     connection.write("Say: Wow");
   }
 
-  if (key === '\c') {
+  if (key === keyMap.BOO_KEY) {
     connection.write("Say: Boo");
   }
   
